@@ -1,0 +1,28 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "Romin",
+      "lastName": "Irani",
+      "emailAddress": "romin.k.irani@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Neil",
+      "lastName": "Irani",
+      "emailAddress": "neilrirani@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "emailAddress": "tomhanks@gmail.com"
+    },
+    {
+      "id": 4,
+      "firstName": "John",
+      "lastName": "Paul",
+      "emailAddress": "johnpaul@yahoo.com"
+    }
+  ]
+}

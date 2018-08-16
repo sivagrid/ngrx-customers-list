@@ -1,0 +1,8 @@
+.demo {
+  margin:4em auto;
+  width: 70%;
+}
+
+.table a.table-link.danger {
+  color: #e74c3c;
+}

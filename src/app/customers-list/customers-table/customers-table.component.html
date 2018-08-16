@@ -1,0 +1,34 @@
+<div class="container demo">
+    <h2 class="border-bottom mb-3 ng-binding pb-2 text-center">Customers List</h2>
+  <table class="datatable table table-striped table-bordered">
+    <thead>
+      <tr>
+      <th><span>First Name</span></th>
+      <th><span>Last Name</span></th>
+      <th><span>Email</span></th>
+      <th><span>Actions</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{customer.firstName}}</td>
+        <td>{{customer.lastName}}</td>
+        <td>{{customer.emailAddress}}</td>
+        <td>
+          <a routerLink="/customer/{{customer.id}}">
+            <span class="fa-stack">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <a (click)="deleteCustomer(customer)" href="#" class="table-link danger">
+            <span class="fa-stack">
+                <i class="fa fa-square fa-stack-2x"></i>
+                <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div><!--/.container.demo -->

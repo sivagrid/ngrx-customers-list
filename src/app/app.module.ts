@@ -27,7 +27,7 @@ import { CustomersTableComponent } from './components/customers-list/customers-t
     HttpClientModule,
     FormsModule,
     AppRouterModule,
-    StoreModule.forRoot({customers: CustomerReducer}),
+    StoreModule.forRoot({applicationState: CustomerReducer}),
     EffectsModule.forRoot([CustomerEffects]),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states

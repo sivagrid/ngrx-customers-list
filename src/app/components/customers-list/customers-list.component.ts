@@ -3,7 +3,6 @@ import { Customer } from '../../models/customer';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../models/app.state';
 import * as CustomerActions from '../../store/customer.actions';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-customers-list',
@@ -11,14 +10,14 @@ import { Observable } from 'rxjs';
   styleUrls: ['./customers-list.component.css']
 })
 export class CustomersListComponent implements OnInit {
-  customers$: Observable<Customer[]>;
+  customers:Customer[];
 
-  constructor(private store: Store<AppState>) {
-    this.customers$ = this.store.select(state =>  state.customers);
-  }
+  constructor(private store: Store<AppState>) {}
 
   ngOnInit() {
     this.getCustomers();
+    this.store.select('applicationState')
+        .subscribe((state:AppState) => this.customers = state.customers);
   }
 
   getCustomers() {

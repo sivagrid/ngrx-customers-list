@@ -7,12 +7,12 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { FormsModule } from '@angular/forms';
 
-import { CustomersListComponent } from './customers-list/customers-list.component';
-import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
+import { CustomersListComponent } from './components/customers-list/customers-list.component';
+import { CustomerDetailComponent } from './components/customer-detail/customer-detail.component';
 import { AppRouterModule } from './app-routing.module';
 import { CustomerReducer } from './store/customer.reducer';
 import { CustomerEffects } from './store/customer.effects';
-import { CustomersTableComponent } from './customers-list/customers-table/customers-table.component';
+import { CustomersTableComponent } from './components/customers-list/customers-table/customers-table.component';
 
 
 @NgModule({

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from "@angular/core";
-import { Customer } from '../../models/customer';
+import { Customer } from '../../../models/customer';
 
 @Component({
   selector: 'app-customers-table',

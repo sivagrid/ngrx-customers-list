@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { CustomerService } from "../customer.service";
+import { CustomerService } from "../services/customer.service";
 import { Effect, Actions, ofType } from '@ngrx/effects';
 import { switchMap, startWith, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';

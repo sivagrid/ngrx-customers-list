@@ -1,12 +1,12 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { CustomerService } from '../customer.service';
-import { Customer } from '../models/customer';
+import { CustomerService } from '../../services/customer.service';
+import { Customer } from '../../models/customer';
 import { NgForm } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '../models/app.state';
-import * as CustomerActions from '../store/customer.actions';
+import { AppState } from '../../models/app.state';
+import * as CustomerActions from '../../store/customer.actions';
 import { Location } from '@angular/common';
 
 @Component({

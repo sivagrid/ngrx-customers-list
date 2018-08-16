@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Customer } from '../../models/customer';
+import { Customer } from '../../models/customer.modal';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../models/app.state';
 import * as CustomerActions from '../../store/customer.actions';

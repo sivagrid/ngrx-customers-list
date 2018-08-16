@@ -1,6 +1,5 @@
 import * as customerActions from './customer.actions';
 import * as types from './action.types';
-import { Customer } from '../models/customer';
 import { AppState } from '../models/app.state';
 
 export const initialState: AppState = {

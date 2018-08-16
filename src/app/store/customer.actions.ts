@@ -1,7 +1,7 @@
 
 import { Action } from '@ngrx/store';
 import * as types from './action.types';
-import { Customer } from '../models/customer';
+import { Customer } from '../models/customer.modal';
 
 export class loadCustomersAction implements Action {
   readonly type = types.LOAD_CUSTOMERS;

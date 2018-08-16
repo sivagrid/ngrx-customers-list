@@ -2,7 +2,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { CustomerService } from '../../services/customer.service';
-import { Customer } from '../../models/customer';
+import { Customer } from '../../models/customer.modal';
 import { NgForm } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../models/app.state';

@@ -5,7 +5,6 @@ import { Customer } from '../models/customer.modal';
 
 export class loadCustomersAction implements Action {
   readonly type = types.LOAD_CUSTOMERS;
-  constructor() {}
 }
 
 export class loadCustomersSuccessAction implements Action {
